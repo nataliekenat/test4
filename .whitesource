@@ -1,3 +1,37 @@
 {
-  "settingsInheritedFrom": "nataliekenat/whitesource-config@main"
+  "scanSettings": {
+    "configMode": "AUTO",
+    "configExternalURL": "",
+    "baseBranches": [],
+    "enableLicenseViolations": false,
+    "exploitability": false
+  },
+  "checkRunSettings": {
+    "vulnerableCheckRunConclusionLevel": "NONE",
+    "failOnVulnerabilityMinSeverity": "CRITICAL",
+    "licenseCheckRunConclusionLevel": "success",
+    "displayMode": "diff",
+    "useMendCheckNames": true,
+    "strictMode": "warning"
+  },
+  "issueSettings": {
+    "minSeverityLevel": "NONE",
+    "displayLicenseViolations": false,
+    "issueType": "DEPENDENCY"
+  },
+ "remediateSettings": {
+    "enableRenovate": false,
+    "workflowRules": {
+      "enabled": false,
+      "minVulnerabilitySeverity": "CRITICAL"
+    }
+  },
+  "imageSettings": {
+    "imageTracing": {
+      "enableImageTracingPR": false,
+      "addRepositoryCoordinate": false,
+      "addDockerfilePath": false,
+      "addMendIdentifier": false
+    }
+  }
 }
